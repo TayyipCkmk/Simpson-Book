@@ -50,26 +50,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kxd-GE-cin">
-                                <rect key="frame" x="20" y="161" width="374" height="216"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kxd-GE-cin">
+                                <rect key="frame" x="20" y="108" width="374" height="438"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFR-E8-Chw">
-                                <rect key="frame" x="65" y="458" width="284" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="job label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rpb-Pa-jDI">
+                                <rect key="frame" x="65" y="685" width="284" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="ej7-YU-fhy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="job label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rpb-Pa-jDI">
-                                <rect key="frame" x="65" y="575" width="284" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFR-E8-Chw">
+                                <rect key="frame" x="65" y="587" width="284" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="RWk-tr-bw7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LFR-E8-Chw" firstAttribute="trailing" secondItem="Rpb-Pa-jDI" secondAttribute="trailing" id="5wc-Cr-3dL"/>
+                            <constraint firstItem="kxd-GE-cin" firstAttribute="centerX" secondItem="LFR-E8-Chw" secondAttribute="centerX" id="9Ic-pV-hqN"/>
+                            <constraint firstItem="kxd-GE-cin" firstAttribute="leading" secondItem="QGS-2E-l4Z" secondAttribute="leadingMargin" id="Cit-7J-AeE"/>
+                            <constraint firstItem="LFR-E8-Chw" firstAttribute="leading" secondItem="Rpb-Pa-jDI" secondAttribute="leading" id="UbP-j6-UfT"/>
+                            <constraint firstItem="kxd-GE-cin" firstAttribute="top" secondItem="acn-2R-OrZ" secondAttribute="top" constant="20" id="XXK-dK-R8N"/>
+                            <constraint firstItem="LFR-E8-Chw" firstAttribute="leading" secondItem="acn-2R-OrZ" secondAttribute="leading" constant="65" id="XsQ-Ut-keA"/>
+                            <constraint firstItem="kxd-GE-cin" firstAttribute="trailing" secondItem="QGS-2E-l4Z" secondAttribute="trailingMargin" id="aEk-aQ-18D"/>
+                            <constraint firstItem="Rpb-Pa-jDI" firstAttribute="top" secondItem="LFR-E8-Chw" secondAttribute="bottom" constant="26" id="dhA-cc-Hry"/>
+                            <constraint firstItem="acn-2R-OrZ" firstAttribute="bottom" secondItem="Rpb-Pa-jDI" secondAttribute="bottom" constant="105" id="sLJ-o1-MaC"/>
+                            <constraint firstItem="LFR-E8-Chw" firstAttribute="top" secondItem="kxd-GE-cin" secondAttribute="bottom" constant="41" id="vdG-tE-J9g"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="acn-2R-OrZ"/>
                     </view>
                     <connections>
