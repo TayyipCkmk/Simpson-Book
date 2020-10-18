@@ -19,17 +19,19 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
       tableView.dataSource = self
       tableView.delegate = self
         
-        let homer = Simpsons(nameInit: "Homer Simpson", jobInit: "Worker", imageInit: UIImage(named: "homer")!)
+        let homer = Simpsons(nameInit: "Homer Simpson", jobInit: "Chemist", imageInit: UIImage(named: "homer")!)
         let bart = Simpsons(nameInit: "Bart Simpson", jobInit: "Student", imageInit: UIImage(named: "bart")!)
-        let lisa = Simpsons(nameInit: "Lisa Simpson", jobInit: "Studentt", imageInit: UIImage(named: "lisa")!)
+        let lisa = Simpsons(nameInit: "Lisa Simpson", jobInit: "Student", imageInit: UIImage(named: "lisa")!)
         let maggie = Simpsons(nameInit: "Maggie Simpson", jobInit: "Baby", imageInit: UIImage(named: "maggie")!)
-        let marge = Simpsons(nameInit: "Marge Simpson", jobInit: "House Wife", imageInit: UIImage(named: "marge")!)
+        let marge = Simpsons(nameInit: "Marge Simpson", jobInit: "Housewife", imageInit: UIImage(named: "marge")!)
         
         mySimpsons.append(homer)
         mySimpsons.append(bart)
         mySimpsons.append(lisa)
         mySimpsons.append(maggie)
         mySimpsons.append(marge)
+        
+        navigationItem.title = "Simpsons"
         
     }
     
